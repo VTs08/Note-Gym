@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+span,
+h1 {
+  font-family: var(--font-roboto);
+}
+
+:root {
+  --azul-gelo: #bad6f8;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --background: #0d0d0d;
+  --white: #fff;
+  --cinza-texto: #858585;
+  --cinza-linha: #2b2b2b;
+}
+
+body {
+  background-color: var(--background);
+}
+.cabecalho {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0px 4px 5px black;
+}
+
+.cabecalho-logo {
+  width: 40px;
+}
+
+.cabecalho-treino {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: var(--font-poppins);
+}
+
+.cabecalho-treino span {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--azul-gelo);
+}
+
+.cabecalho-treino span:last-child {
+  font-size: 12px;
+  color: var(--cinza-texto);
+  font-weight: normal;
+  text-transform: none;
+}
+
+.menu-hamburguer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+.barra {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: var(--azul-gelo);
+  border-radius: 5px;
+}
+
+.conteudo {
+  display: grid;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.box-treino {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-treino img {
+  width: 150px;
+  height: 150px;
+}
+
+.treino-descricao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding-left: 10px;
+}
+
+.treino-descricao h1 {
+  grid-column: 1 / 3;
+  font-size: 24px;
+}
+
+.treino-descricao .series-aquecimento {
+  grid-column: 1 / 3;
+}
+
+.treino-descricao span {
+  font-size: 12px;
+  color: var(--cinza-texto);
+  font-weight: 400;
+}
+
+.linha {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--cinza-linha);
+  margin: 15px 0;
+}
+
+.recordes {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 20px;
+  backgroundk
+}
